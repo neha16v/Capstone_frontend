@@ -1,0 +1,28 @@
+.ask_question{
+    border: 0;
+    background-color: rgba(0, 229, 255);
+    border-radius: 5px;
+}
+.sort{
+    width: 15px;
+    height: 15px;
+}
+.new{
+    border-right: 0px;
+}
+.active{
+    border-left: 0px;
+    border-right: 0px;
+}
+.more{
+    border-left: 0px;
+}
+.hashtag{
+    background-color: rgb(86, 117, 211);
+    border: 0;
+    border-radius: 2px;
+}
+.user{
+    width: 45px;
+    height: 45px;
+}

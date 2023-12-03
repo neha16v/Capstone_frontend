@@ -1,0 +1,36 @@
+.world{
+    width: 15px;
+    height: 15px;
+}
+.question{
+    padding-left: 5px;
+}
+.tags{
+    padding-left: 20px;
+}
+.star{
+    width: 15px;
+    height: 15px;
+}
+.explore{
+    padding-left: 5px;
+}
+.bag{
+    width: 15px;
+    height: 15px;
+}
+.companies{
+    padding-left: 5px;
+}
+.bottom{
+    padding-bottom: 10px;
+}
+.vl{
+    border-left: 3px solid grey;
+    height: 100vh;
+    padding-left: 5px;
+}
+.buttonn{
+    background-color: white;
+    border: 0;
+}
