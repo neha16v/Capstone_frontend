@@ -1,6 +1,9 @@
 import React from 'react';
 import './Main_questionpage.css'
 import sort from '../images/sort.png'
+import pen from '../images/pen.png'
+import message from '../images/message.png'
+import stackoveflow from '../images/stackoverflow.png'
 
 import { useNavigate } from 'react-router-dom';
 import Allquestions from './Allquestions';
@@ -10,7 +13,7 @@ const Main_questionpage = ({ question }) => {
         <div style={{ paddingLeft: "380px", position: "relative", top: "-680px", height: "0px" }}>
             <div className='d-flex' style={{ paddingBottom: "10px" }}>
                 <div><h4>All Questions</h4></div>
-                <div style={{ paddingLeft: "750px" }}><button style={{padding:"10px"}} className='ask_question' onClick={() => nav("/question")}>Ask Question</button></div>
+                <div style={{ paddingLeft: "740px" }}><button style={{ padding: "10px" }} className='ask_question' onClick={() => nav("/question")}>Ask Question</button></div>
             </div>
             <div className='d-flex'>
                 <div><h5>{question && question.length} Questions</h5></div>
@@ -20,64 +23,49 @@ const Main_questionpage = ({ question }) => {
                     <div><button style={{ paddingLeft: "25px", borderRadius: "5px" }}>Filter</button></div>
                 </div>
             </div>
-            {question?.map((_q,index) => (
+            {question?.map((_q, index) => (
                 <div key={index}>
                     <Allquestions question={_q} />
                 </div>
             ))}
-            {/* <div className='d-flex' style={{paddingTop:"25px", gap:"20px"}}>
-                <div style={{display:"flex",flexDirection:"column", alignItems:"center"}}>
-                    <div style={{padding:"2px"}}>0</div>
-                    <div style={{padding:"2px"}}>Votes</div>
-                    <div style={{padding:"2px"}}>0</div>
-                    <div style={{padding:"2px"}}>Answers</div>
-                    <div style={{padding:"2px"}}>0 Views</div>
+            <div style={{ position: "relative", left: "738px", backgroundColor: "rgb(243, 229, 171)", width: "320px" }}>
+                <div >
+                    <div style={{paddingLeft:"10px", paddingTop:"10px"}}><b>The Overflow Blog</b></div>
+                    <hr></hr>
                 </div>
-                <div>
-                    <div className='text-primary' style={{paddingBottom:"5px"}} onClick={()=>nav("/viewquestion")}><button className='text-primary' style={{backgroundColor:"white", border:"0px", paddingLeft:"1px"}}>How to use drag and drop in ant design ?</button></div>
-                    <div style={{paddingBottom:"15px", width:"900px"}}>Ant Design is a popular React UI library that provides a set of high-quality components for building user interfaces. To implement drag-and-drop functionality in Ant Design, you can use the rc-drawer library, which is a separate library that integrates well with Ant Design.</div>
-                    <div className='d-flex' style={{gap:"15px"}}>
-                        <div><button className='hashtag'>react</button></div>
-                        <div><button className='hashtag'>antd</button></div>
-                        <div><button className='hashtag'>frontend</button></div>
-                    </div>
+                <div >
+                    <div style={{paddingLeft:"10px"}}><img style={{ height: "20px", paddingLeft: "10px", paddingRight: "10px"}} src={pen}></img>Observality is the key to the future of software (and your devOps carrer)</div>
                 </div>
-            </div> */}
-            {/* <div style={{paddingLeft:"870px"}}>
-                <div style={{paddingBottom:"10px"}}>Timestamp</div>
-                <div className='d-flex' style={{gap:"10px"}}>
-                    <div><img className='user' src={user}></img></div>
-                    <div style={{paddingTop:'9px'}}>User name</div>
+                <div >
+                    <div style={{paddingLeft:"10px"}}><img style={{ height: "20px", paddingLeft: "10px", paddingRight: "10px" }} src={pen}></img>Podcast 374: How valuable is your screen name?</div>
+                    <hr></hr>
                 </div>
-            </div> */}
-            {/* <hr></hr> */}
-            {/* <div className='d-flex' style={{paddingTop:"25px", gap:"20px"}}>
-                <div style={{display:"flex",flexDirection:"column", alignItems:"center"}}>
-                    <div style={{padding:"2px"}}>0</div>
-                    <div style={{padding:"2px"}}>Votes</div>
-                    <div style={{padding:"2px"}}>0</div>
-                    <div style={{padding:"2px"}}>Answers</div>
-                    <div style={{padding:"2px"}}>0 Views</div>
+                <div >
+                    <div style={{paddingLeft:"10px"}}><b>Featured on Meta</b></div>
+                    <hr></hr>
                 </div>
-                <div>
-                <div style={{paddingBottom:"5px"}} onClick={()=>nav("/viewquestion")}><button className='text-primary' style={{backgroundColor:"white", border:"0px", paddingLeft:"1px"}}>How to use drag and drop in ant design ?</button></div>
-                    <div style={{paddingBottom:"15px", width:"900px"}}>Ant Design is a popular React UI library that provides a set of high-quality components for building user interfaces. To implement drag-and-drop functionality in Ant Design, you can use the rc-drawer library, which is a separate library that integrates well with Ant Design.</div>
-                    <div className='d-flex' style={{gap:"15px"}}>
-                        <div><button className='hashtag'>react</button></div>
-                        <div><button className='hashtag'>antd</button></div>
-                        <div><button className='hashtag'>frontend</button></div>
-                    </div>
+                <div >
+                    <div style={{paddingLeft:"10px"}}><img style={{ height: "20px", paddingLeft: "10px", paddingRight: "10px"}} src={message}></img>Review queue workflows -  Final release...</div>
                 </div>
-            </div> */}
-            {/* <div style={{paddingLeft:"870px"}}>
-                <div style={{paddingBottom:"10px"}}>Timestamp</div>
-                <div className='d-flex' style={{gap:"10px"}}>
-                    <div><img className='user' src={user}></img></div>
-                    <div style={{paddingTop:'9px'}}>User name</div>
+                <div >
+                    <div style={{paddingLeft:"10px"}}><img style={{ height: "20px", paddingLeft: "10px", paddingRight: "10px" }} src={message}></img>Please welcome Valued Associates: #958 - V2Blast #959 - SpeNcerG</div>
                 </div>
+                <div >
+                    <div style={{paddingLeft:"10px"}}><img style={{ height: "20px", paddingLeft: "10px", paddingRight: "10px"}} src={stackoveflow}></img>Outdated Answers: accepted answer is now unpinned on Stackoverflow</div>
+                    <hr></hr>
+                </div>
+                <div >
+                    <div style={{paddingLeft:"10px"}}><b>Hot Meta Posts</b></div>
+                    <hr></hr>
+                </div>
+                <div >
+                    <div style={{padding:"10px"}}><b>38</b> Why was this spam flag declined, yet the question marked as spam?</div>
+                </div>
+                <div >
+                    <div style={{padding:"10px"}}><b>20</b> What is the bestcourse of action when a user has high enough rap to...</div>
+                </div>
+                <div style={{padding:"10px"}}><b>14</b> Is a link to the "How to ask" help page a usefull comment</div>
             </div>
-            <hr></hr> */}
-
         </div>
     );
 };
