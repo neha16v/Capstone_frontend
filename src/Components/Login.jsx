@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import stackoverflow from '../images/stackoverflow logo.png'
 const Login = () => {
     const nav=useNavigate()
     const[email,setEmail]=useState("")
@@ -31,9 +32,10 @@ const Login = () => {
         }
     };
     return (
-        <div>
+        <div style={{overflow:"hidden"}}>
+            <div style={{position:"relative", left:"690px", top:"150px"}}><img style={{width:"70px",height:"70px"}} src={stackoverflow}></img></div>
             <form onSubmit={submit}>
-                <div className='shadow p-3 mb-5 bg-grey rounded' style={{ border: "2px solid grey", marginTop: "200px", padding: "20px", width: "245px", marginLeft: "600px"}}>
+                <div className='shadow p-3 mb-5 bg-grey rounded' style={{ border: "2px solid grey", marginTop: "150px", padding: "20px", width: "245px", marginLeft: "600px"}}>
                     <div><h5>Email</h5></div>
                     <div style={{ paddingBottom: "10px" }}><input type='text' value={email} style={{border:"2px solid blue", borderRadius:'2px'}} name="email" placeholder='Enter your e-mail' onChange={(e)=>setEmail(e.target.value)} /></div>
                     <div><h5>Password</h5></div>
