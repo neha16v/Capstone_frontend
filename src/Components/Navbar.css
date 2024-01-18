@@ -1,0 +1,48 @@
+.logo{
+    width: 160px;
+}
+.searchimg{
+    width:20px;
+    height: 20px;
+
+}
+.search{
+    border: 0px;
+    background-color: white;
+    position: absolute;
+    top: 13px;
+    margin-left: 3px;
+}
+.navbar{
+    background-color: rgb(232, 229, 229);
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    background-color: grey;
+    border-radius: 5px;
+}
+.button{
+    border: 0px;
+    background-color: rgb(232, 229, 229);
+    position: relative;
+    top: 4px;
+}
+.searchtext{
+    padding: 5px 5px 5px 35px;
+}
+.loginbutton{
+    border: 0px;
+    background-color: rgb(159, 212, 240);
+    position: relative;
+    top: 4px;
+    border: 2px solid rgb(64, 64, 177);
+    border-radius: 4px;
+}
+.loginbutton:hover{
+    background-color: rgb(236, 233, 233);
+}
+.user-avatar{
+    width:40px;
+    height: 40px;
+}
