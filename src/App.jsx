@@ -13,7 +13,7 @@ const App = () => {
   const [questions, setQuestions] = useState([])
   useEffect(() => {
     async function getQuestion() {
-      await axios.get("http://localhost:4000/api/user/question").then((res) => {
+      await axios.get("https://capstone-question-answer-backend.onrender.com/api/user/question").then((res) => {
         setQuestions(res.data.reverse());
         console.log(res.data)
       });
